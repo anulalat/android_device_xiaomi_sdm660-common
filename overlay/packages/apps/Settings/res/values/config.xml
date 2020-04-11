@@ -12,6 +12,4 @@
 -->
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 	<string name="config_customDozePackage">org.lineageos.settings/org.lineageos.settings.doze.DozeSettingsActivity</string>
-    <!-- Enable Manual Sim Provisioning -->
-    <bool name="config_enableManualSubProvisioning">true</bool>
 </resources>
