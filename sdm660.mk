@@ -529,7 +529,3 @@ PRODUCT_PACKAGES += \
 # WiFi Display JAR
 PRODUCT_BOOT_JARS += \
     WfdCommon
-
-# Doze
-PRODUCT_PACKAGES += \
-    XiaomiDoze
