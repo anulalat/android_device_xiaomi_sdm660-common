@@ -45,9 +45,9 @@
 #define MAX_LCD_BRIGHTNESS    4095
 
 /*
- * 8 duty percent steps.
+ * 15 duty percent steps.
  */
-#define RAMP_STEPS 8
+#define RAMP_STEPS 15
 /*
  * Each step will stay on for 50ms by default.
  */
@@ -55,7 +55,7 @@
 /*
  * Each value represents a duty percent (0 - 100) for the led pwm.
  */
-static int32_t BRIGHTNESS_RAMP[RAMP_STEPS] = {0, 12, 25, 37, 50, 72, 85, 100};
+static int32_t BRIGHTNESS_RAMP[RAMP_STEPS] = {0, 12, 25, 37, 50, 72, 85, 100, 85, 72, 50, 37, 25, 12, 0};
 
 namespace {
 /*
@@ -174,7 +174,6 @@ static void handleNotification(const LightState& state) {
         int32_t pauseLo = state.flashOffMs;
 
         if (pauseHi < 0) {
-            stepDuration = state.flashOnMs / (RAMP_STEPS * 2);
             pauseHi = 0;
         }
 
