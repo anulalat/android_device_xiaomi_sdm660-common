@@ -563,7 +563,3 @@ PRODUCT_PACKAGES += \
 # WiFi Display JAR
 PRODUCT_BOOT_JARS += \
     WfdCommon
-	
-# Parts
-PRODUCT_PACKAGES += \
-    XiaomiParts
