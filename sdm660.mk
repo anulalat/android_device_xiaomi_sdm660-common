@@ -418,7 +418,11 @@ PRODUCT_COPY_FILES += \
 
 # Power
 PRODUCT_PACKAGES += \
-    android.hardware.power@1.3-service.pixel-libperfmgr
+    android.hardware.power@1.0-service-qti \
+    android.hardware.power@1.0-impl \
+    android.hardware.power@1.0-service \
+    android.hardware.power.stats@1.0-service.mock \
+    power.qcom
 
 # Powerhint
 PRODUCT_COPY_FILES += \
