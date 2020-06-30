@@ -25,6 +25,9 @@
 # Common Tree Path
 COMMON_PATH := device/xiaomi/sdm660-common
 
+SELINUX_IGNORE_NEVERALLOWS := true
+TARGET_EXCLUDE_QCOM_SEPOLICY := true
+
 # A/B
 ifeq ($(ENABLE_AB), true)
 AB_OTA_UPDATER := true
