@@ -445,6 +445,10 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
+	
+# SafailNet
+PRODUCT_PACKAGES += \
+    init.safailnet.rc
 
 # QTI Performance
 PRODUCT_COPY_FILES += \
