@@ -295,7 +295,8 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     init.target.rc \
     init.performance.sdm660.rc \
-    ueventd.qcom.rc
+    ueventd.qcom.rc \
+    init.safailnet.rc
 
 # Ion
 PRODUCT_PACKAGES += \
@@ -445,10 +446,6 @@ PRODUCT_COPY_FILES += \
 # QMI
 PRODUCT_PACKAGES += \
     libjson
-	
-# SafailNet
-PRODUCT_PACKAGES += \
-    init.safailnet.rc
 
 # QTI Performance
 PRODUCT_COPY_FILES += \
